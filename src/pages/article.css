@@ -1,0 +1,108 @@
+.article{
+    margin-top: 14vh;
+
+    display: flex;
+    justify-content: center;
+}
+.article_containt{
+    margin-top: 4vh;
+}
+.inner_article_container{
+    margin: 15px 0;
+    background-color: #ccc;
+    width: 60%;
+    padding: 12px 50px;
+    border-radius: 6px;
+}
+.article_head_left{
+    display: flex;
+    align-items: center;
+}
+.article_head_left >img{
+    border-radius: 50%;
+    margin: 0 12px;
+}
+.poster>img{
+width: 100%;
+border-radius: 6px;
+}
+.article_title{
+    margin: 20px 0;
+    font-size: 1.4em;
+    font-style: italic;
+}
+.main_containt p{
+    text-align: justify;
+    font-size: 1.2em;
+    margin-top: 40px;
+
+}
+.main_containt p::first-letter{
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-right: 3.5px;
+}
+.comment_container{
+    margin-top: 50px;
+}
+.comment_container h2{
+    font-weight: 200;
+    position: relative;
+}
+.comment_container h2::after{
+content: '';
+width: 100%;
+height: 2px;
+display: block;
+background: black;
+margin-top: 8px;
+border-radius: 5px;
+}
+.comment{
+    margin-top: 20px;
+}
+.comment form{
+    width: 100%;  
+}
+.comment form textarea{
+    width: 100%;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 6px;
+    height: 25vh;
+    padding: 12px 6px;
+    font-size: 1.1em;
+    border-radius: 6px;
+}
+.comment_btns{
+    text-align: right;
+}
+.comment_btns button{
+    outline: none;
+    border: none;
+    padding: 6px 12px;
+    margin: 12px 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+#publish_btn{
+    background-color:#FBB02A;
+    color: #fff;
+}
+.commented{
+    margin: 50px 0;
+}
+.reader_info{
+display: flex;
+align-items: center;
+}
+.reader_info img{
+margin-right:6px;
+border-radius: 50%;
+
+}
+.message{
+    margin-top: 20px;
+    margin-left: 16px;
+}

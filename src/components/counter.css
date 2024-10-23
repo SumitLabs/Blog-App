@@ -1,0 +1,45 @@
+.counter {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.counter_icon{
+    font-size: 4rem;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.counter_icon span{
+    background-color: #FBB02A;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    right: 45%;
+}
+.count{
+    font-weight: bolder;
+}
+.count,.counter_title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 443px){
+    .count,.counter_title{
+        font-size: 1rem;
+    }
+    .counter_icon span{
+        width: 30px;
+        height: 30px;
+    }
+    .counter_icon{
+        font-size: 2rem;
+    }
+    .counter_icon span{
+        width: 35px;
+        height: 35px;
+    }
+}

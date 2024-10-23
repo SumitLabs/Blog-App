@@ -1,0 +1,65 @@
+.error_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.error_page h3{
+    font-size: 12rem;
+ 
+}
+.error_page p{
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+
+}
+.error_page a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    background-color: #FBB02A;
+    padding: 5px 15px;
+    color: #232F3E;
+    border-radius: 6px;
+   
+}
+.error_page a:hover{
+    background-color: #232F3E;
+    color: #FBB02A;
+    transition: all ease-in-out 1.5s;
+}
+
+.error_page::before{
+    content: '';
+    position: absolute;
+    z-index: -3;
+    height: 500px;
+    width: 500px;
+    background-color: #304156;
+    background-image: url("/img/error_img.png");
+    background-repeat: no-repeat;
+    left: 64%;
+    background-position: center;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+@media screen and (max-width: 790px) {
+    .error_page::before{
+        left: 84%;
+    }
+    
+}
+@media screen and (max-width: 377px) {
+    .error_page::before{
+        left: 94%;
+    }
+    .error_page h3{
+        font-size: 12rem;
+        
+    }
+}

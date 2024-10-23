@@ -1,0 +1,54 @@
+.about {
+    margin-top: 15vh;
+}
+
+.about_container {
+    padding: 30px;
+}
+
+.about h3 {
+    font-size: 1.3rem;
+}
+
+.about p {
+    margin-top: 40px;
+    line-height: 22px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.ceo_info {
+    margin: 36px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ceo_info table {
+    width: 45%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.ceo_info td {
+    padding: 6px 4px;
+}
+
+.table_row:nth-child(2n) {
+    background-color: #ccc;
+}
+
+.table_row th {
+    padding: 6px 0;
+    color: #fff;
+    background-color: #FBB02A;
+}
+
+
+
+@media screen and (max-width: 445px) {
+    .ceo_info table {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,166 @@
+.card {
+    padding: 10px;
+    background-color: #ccc;
+    width: 300px;
+    border-radius: 6px;
+}
+
+.card img {
+    height: 160px;
+    width: 100%;
+    transform: scaleX(1);
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+}
+.modal_container>h2{
+    background-color: burlywood;
+    padding: 0 6px;
+}
+
+.card img:hover {
+    transform: scaleX(1.04);
+}
+
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_author_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+}
+
+
+
+.profile_name>.categrory {
+    background-color: #fff;
+    padding: 0 2px;
+    border-radius: 3px;
+    margin: 0;
+}
+
+
+.right_author_area {
+    cursor: pointer;
+}
+
+.profile_detail h3, p {
+    color: #000;
+}
+
+.title{
+    margin: 6px 0;
+}
+.title a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.descreption p {
+    font-size: 1em;
+    color: #000;
+    margin-top: 6px;
+    width: 100%;
+    text-align: justify;
+}
+
+.left_inter_area{
+    display: flex;
+    align-items: center;
+}
+.left_inter_area img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 536px) {
+    .card {
+        width: 247px;
+        margin-left: 36px;
+        margin-top: 2px;
+    }
+}
+.modal_wrapper{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .6;
+    z-index: 10;    
+}
+.modal_container{
+    position: fixed;
+    max-width: 30rem;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+
+}
+.share_on{
+margin-top: 20px;
+font-size: 2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.share_on a{
+   margin: 10px;
+   color: #fff;
+   padding: 6px;
+   
+}
+.facebook_link{
+background-color:#1877F2;
+}
+.x_link{
+background-color: #000;
+}
+.linkedin_link{
+background-color: #0072b1;
+}
+.more_link{
+    background-color: #000;
+}
+.close{
+ position: absolute;
+ right: -7px;
+ top: -15px;
+ padding: 9px 12px;
+ border-radius: 25%;
+ border: none;
+ background-color: #000;
+ color: #fff;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+@media screen and (max-width: 536px){
+    .modal_container{
+        
+        max-width: 19rem;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        padding: 1.5rem 2rem;
+        border-radius: 0.5rem;
+    
+    }
+}

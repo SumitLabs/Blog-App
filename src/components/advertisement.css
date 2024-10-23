@@ -1,0 +1,8 @@
+.ad_banner{
+    height: 40vh;
+    width: 90%;
+    background-color: #ccc;
+    border-radius: 6px;
+    text-align: center;
+    margin: 12px 0;
+}

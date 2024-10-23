@@ -1,0 +1,282 @@
+.top_bar {
+    height: 5vh;
+    background-color: #FBB02A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.social_icon>a {
+    color: #000;
+    font-size: 20px;
+    margin: 0 2px;
+}
+
+.search {
+    width: 30%;
+}
+
+.search input {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 2px solid #000;
+    width: 80%;
+}
+
+.search button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin: 0 8px;
+    padding: 6px;
+    border-radius: 25%;
+    cursor: pointer;
+    font-size: 12px;
+
+
+}
+
+
+/* -------nav----------- */
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    margin-top: 5vh;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.nav-menu li a:hover {
+    color: #FBB02A;
+}
+
+.nav-menu li a {
+    padding: 0 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    margin: 18px !important;
+    padding: 0px !important;
+
+}
+
+.btns {
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.btns #user {
+    color: #fff;
+}
+
+.btns a img {
+    border-radius: 50%;
+    margin: 0px 15px;
+}
+
+.btns a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btns span {
+    color: #fff;
+    cursor: pointer;
+}
+  /* Auth-section */
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.form_toggle{
+    display: flex;
+    font-size: 1em;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #ccc;
+    height: 5vh;
+    align-items: center;
+}
+.form_toggle :first-child{
+    
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+   
+}
+.form_toggle :last-child{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.form_btn{
+    margin-top: 40px;
+    border: none;
+    width: 100%;
+    background-color: #FBB02A;
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.active{
+background-color: #FBB02A;
+border-radius: 20px;
+}
+
+
+.auth .input_box {
+    width: 100%;
+}
+
+.auth .input_icon {
+    opacity: .4;
+    margin-bottom: -32px;
+    margin-left: 12px;
+}
+
+.auth input {
+    width: 100%;
+    margin: 6px 0;
+    height: 30px;
+    background-color: #ccc;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 0 40px;
+    font-size: 1em;
+    z-index: -1;
+}
+
+
+.forgot_password {
+    margin-top: 4px;
+    width: 100%;
+}
+
+.forgot_password a {
+    color: #000;
+    padding: 0 6px;
+    font-style: italic;
+    color: rgb(7, 14, 118);
+    font-weight: 600;
+}
+
+.submit_box {
+    display: flex;
+    gap: 30px;
+    margin: 40px auto;
+    
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1040px) {
+    .nav {
+        justify-content: space-evenly;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(32 31 31 / 60%);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li a {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .nav-menu li a:hover {
+        color: #FBB02A;
+    }
+
+    .nav-menu li {
+        padding: 1rem 0;
+    }
+
+    .btns {
+        z-index: -5;
+    }
+
+    .hamburger {
+        display: initial;
+        color: #FBB02A;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .search {
+        width: 70%;
+    }
+
+    .top_bar {
+        padding: 0px 10px;
+    }
+    .auth input {
+        font-size: .8em;
+    }
+    .form_toggle{
+       text-align: center;
+    }
+}

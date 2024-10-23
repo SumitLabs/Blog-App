@@ -1,0 +1,14 @@
+.ebooks {
+    background-color: #B1BAFF ;
+    z-index: 1;
+}
+
+.ebook_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 5rem));
+    justify-content: center;
+    align-items: center;
+    gap: 12px 10px;
+    padding: 100px 0;
+}
+
